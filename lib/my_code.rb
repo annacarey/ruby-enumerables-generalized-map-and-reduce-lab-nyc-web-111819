@@ -15,10 +15,10 @@ pp collection
 
 if starting_value != collection[0]
     value = starting_value
-    index = 1
+    index = 0
   else 
     value = collection[0]
-    index = 0
+    index = 1
 end 
 while index < collection.length
   value = yield(value, collection[index])
