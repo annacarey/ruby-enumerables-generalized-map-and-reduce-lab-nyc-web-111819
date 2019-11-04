@@ -12,10 +12,13 @@ end
 def reduce(collection, starting_value = collection[0])
 pp collection 
 
-index = 1
+
 if starting_value != collection[0]
     value = starting_value
-  else value = collection[0]
+    index = 1
+  else 
+    value = collection[0]
+    index = 0
 end 
 while index < collection.length
   value = yield(value, collection[index])
