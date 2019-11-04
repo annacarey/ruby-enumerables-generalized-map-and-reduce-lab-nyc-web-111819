@@ -12,7 +12,7 @@ end
 def reduce(collection, starting_value = collection[0])
 pp collection 
 
-index = 0
+index = 1
 if starting_value != collection[0]
     value = starting_value
   else value = collection[0]
